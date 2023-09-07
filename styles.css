@@ -1,0 +1,13 @@
+html,body {
+    box-sizing: border-box;
+    background-color:black;
+    color: white;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    padding-top: 300px;
+}
