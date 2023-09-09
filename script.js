@@ -43,6 +43,8 @@ function game(input,comp) {
     
     if( input === comp ) {
         result = "It's a Tie";
+        
+        j-=1;
     }
 
     if( comp === "Rock" ) {
@@ -86,5 +88,16 @@ function game(input,comp) {
 
     console.log(`${result}`);
     console.log(`Player :${i} , Computer ${j}`);
+    displayScore(i,j);
+    displayResult(result);
 }
 
+function displayResult(result) {
+    document.querySelector(".result").innerHTML= `${result} `;
+
+}
+
+function displayScore(i,j) {
+    document.querySelector(".PlayerScore").innerHTML= `Player score is ${i}`;
+    document.querySelector(".CompScore").innerHTML= `Comuter score is ${j}`;
+}
