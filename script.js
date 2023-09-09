@@ -1,3 +1,6 @@
+let i=0;
+let j=0;
+
 function rock() {
    let input = "Rock";
    let comp = getComputerChoice();
@@ -37,6 +40,7 @@ function getComputerChoice(){
 function game(input,comp) {
     
     let result;
+    
     if( input === comp ) {
         result = "It's a Tie";
     }
@@ -44,36 +48,43 @@ function game(input,comp) {
     if( comp === "Rock" ) {
         if (input === "Paper") {
             result = "The player wins";
+            i+=1;
         }
 
         else {
             if (input === "Scissors") 
             result="The computer wins";
+            j+=1;
         }
     }
 
     if( comp === "Paper" ) {
         if (input === "Scissors") {
             result = "The player wins";
+            i+=1;
         }
 
         else {
             if (input === "Rock") 
             result="The computer wins";
+            j+=1;
         }
     }
 
     if( comp === "Scissors" ) {
         if (input === "Rock") {
             result = "The player wins";
+            i+=1;
         }
 
         else {
             if (input === "Paper") 
             result="The computer wins";
+            j+=1;
         }
     }
 
     console.log(`${result}`);
+    console.log(`Player :${i} , Computer ${j}`);
 }
 

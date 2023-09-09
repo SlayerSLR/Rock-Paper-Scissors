@@ -11,3 +11,12 @@ body {
 h1 {
     padding-top: 300px;
 }
+
+button {
+    background-color: black;
+    border-color: white;
+    height: 30px;
+    width: 80px;
+    color: white;
+    border-radius: 5px;;
+}
