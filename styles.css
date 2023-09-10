@@ -1,25 +1,35 @@
 html,body {
     box-sizing: border-box;
-   
+    font-family:Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
 
 html {
     background-image: url(rock-paper-scissor-ft.jpg);
-    background-size: cover;
+    background-size: 1900px 1000px;
 }
 
 body {
    text-align:center;
+   background-color: rgba(0,0,0,0.2);
+   height: 800px;
 }
 
 h1 {
-    padding-top: 250px;
+    padding-top: 150px;
     font-size: 48px;
+    padding-bottom: 70px
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 30px;
+    font-weight: 700;
+    
 }
 
 button {
-    background-color: rgba(256,256,256,0);
+    
     border-color: white;
     height: 60px;
     width: 100px;
@@ -30,21 +40,40 @@ button {
 }
 
 .Score {
-    display: inline;
+    
     width: 600px;
     height: auto;
     font-weight: 600;
 }
 
-.PlayerScore, .CompScore {
-    
-    
-  
-
+.ScoreContainer {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.PScore,.CScore {
+    border-style: solid;
+    border-color: white;
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-width: thin;
+    padding-top: 9px;
 }
 
-.result {
+.ResultContainer {
     padding-top: 20px;
-    padding-bottom: 20px;
+    height: 50px;
     font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content:center;
 }
+
+button, .CScore,.PScore {
+    background-color: rgba(0,0,0,0.35);
+    
+}
+

@@ -98,6 +98,6 @@ function displayResult(result) {
 }
 
 function displayScore(i,j) {
-    document.querySelector(".PlayerScore").innerHTML= `Player score is ${i}`;
-    document.querySelector(".CompScore").innerHTML= `Comuter score is ${j}`;
+    document.querySelector(".ScoreDigitP").innerHTML= `${i}`;
+    document.querySelector(".ScoreDigitC").innerHTML= `${j}`;
 }
