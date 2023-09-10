@@ -86,10 +86,26 @@ function game(input,comp) {
         }
     }
 
+    if(i===5) {
+        alert("You win this round!");
+        i=0;
+        j=0;
+    }
+
+    else {
+        if(j===5) {
+        alert("The computer wins this round");
+        i=0;
+        j=0;
+        }
+    }
+
     console.log(`${result}`);
     console.log(`Player :${i} , Computer ${j}`);
     displayScore(i,j);
     displayResult(result);
+    
+
 }
 
 function displayResult(result) {
